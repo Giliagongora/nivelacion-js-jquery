@@ -34,6 +34,9 @@ function renderHighlightedRecipes(recipesArray) {
 * archivo "templates/templates-recipe.html"
 */
 function renderRecipe(recipe) {
+/*
+	$("list-recipes").append('<a class="item-recipe" href="#><')
+*/
 	console.log('Voy a pintar la receta: ', recipe);
 }
 
