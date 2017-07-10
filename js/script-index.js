@@ -1,5 +1,6 @@
 $(document).ready( function(){
-
+	//Llame por la class a la flecha al js e hice que ejecutara la acción hide(esconder)
+	$(".icon-arrow-left-alt").hide();
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
 	renderHighlightedRecipes(recipesArray);
 
@@ -41,5 +42,8 @@ function renderActivities(activitiesArray) {
 function renderActivity(recipe) {
 	
 }
+$(document).ready(function(){
+        $("icon-arrow-left-alt").hide();
+    })
 
 
