@@ -1,10 +1,15 @@
-$(document).ready( function(){
-	//Llame por la class a la flecha al js e hice que ejecutara la acción hide(esconder)
+$(document).ready(function(){
+	//Desaparecer icono
+	//Llame por la class a la flecha que esta en html al js e hice que ejecutara la acción hide(esconder)
 	$(".icon-arrow-left-alt").hide();
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
 	renderHighlightedRecipes(recipesArray);
 
 });
+	function printNews(){
+		$(".more").append("<span>NUEVAS RECETAS</span>");
+	}
+printNews();
 
 
 /*
@@ -42,8 +47,6 @@ function renderActivities(activitiesArray) {
 function renderActivity(recipe) {
 	
 }
-$(document).ready(function(){
-        $("icon-arrow-left-alt").hide();
-    })
+
 
 
