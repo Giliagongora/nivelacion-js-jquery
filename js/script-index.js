@@ -2,8 +2,7 @@ $(document).ready(function(){
 	//Desaparecer icono
 	//Llame por la class a la flecha que esta en html al js e hice que ejecutara la acción hide(esconder)
 	$(".icon-arrow-left-alt").hide();
-	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
-	renderHighlightedRecipes(recipesArray);
+
 
 });
 	function printNews(){
@@ -11,12 +10,20 @@ $(document).ready(function(){
 	}
 printNews();
 
+	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
+	renderHighlightedRecipes(recipesArray);
 
 /*
 * Función que se encarga de pintar TODAS las recetas que tengan 
 * marcado el atributo "highlighted" como TRUE
 */
 function renderHighlightedRecipes(recipesArray) {
+      recipesArray.forEach(function(el) {
+    if (el.highlighted==true) {
+        renderRecipe(el);
+    }
+    });
+
 	console.log('Recipes: ', recipesArray);
 }
 
